@@ -1,0 +1,84 @@
+{
+  "description": "Scandibérique map challenge, Bagneaux-sur-Loing to Nemours.",
+  "crs": "EPSG:2154",
+  "cell_size_m": 50.0,
+  "grid_shape": [
+    121,
+    101
+  ],
+  "grid_shape_note": "[rows, cols]; row 0 is the NORTH edge, col 0 the WEST edge",
+  "origin_top_left_2154": [
+    675300.0,
+    6797850.0
+  ],
+  "cell_formula": "col = floor((x - xmin) / cell); row = floor((ymax - y) / cell), x/y in EPSG:2154",
+  "bbox_2154": {
+    "xmin": 675300.0,
+    "ymin": 6791800.0,
+    "xmax": 680350.0,
+    "ymax": 6797850.0
+  },
+  "bbox_wgs84": {
+    "west": 2.667046669052467,
+    "east": 2.7353928359599315,
+    "south": 48.22607943895848,
+    "north": 48.2806863087487
+  },
+  "route_endpoints": {
+    "start": {
+      "name": "Camping La Rivière Dorée, Chemin des Grèves, 77167 Bagneaux-sur-Loing",
+      "lat": 48.24123,
+      "lon": 2.70539,
+      "row": 87,
+      "col": 56
+    },
+    "end": {
+      "name": "Château-Musée de Nemours",
+      "lat": 48.26559,
+      "lon": 2.69709,
+      "row": 33,
+      "col": 44
+    }
+  },
+  "classes": {
+    "0": "unknown",
+    "1": "broadleaf",
+    "2": "conifer",
+    "3": "open",
+    "4": "water",
+    "5": "built"
+  },
+  "palette_rgb": {
+    "0": [
+      160,
+      160,
+      160
+    ],
+    "1": [
+      107,
+      166,
+      68
+    ],
+    "2": [
+      20,
+      83,
+      45
+    ],
+    "3": [
+      230,
+      205,
+      120
+    ],
+    "4": [
+      49,
+      130,
+      189
+    ],
+    "5": [
+      200,
+      60,
+      60
+    ]
+  },
+  "priority": "water > built > forest > open, for whatever covers >= 25 % of a cell; within forest, broadleaf or conifer by whichever covers more"
+}

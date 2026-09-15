@@ -1,0 +1,25 @@
+# This repository is what the teams clone. Nothing that reveals the answer, or that
+# lets anyone rebuild it, is tracked: make_gt.py and score.py stay on the organiser's
+# machine until after the scoring.
+make_gt.py
+score.py
+evaluate.py
+submissions/
+RUNBOOK.md
+gt/
+results/
+observed/
+slides/
+viz.py
+baseline_clip.py
+tools/
+data/
+
+.venv/
+.venv-clip/
+__pycache__/
+*.pyc
+node_modules/
+package-lock.json
+.claude/
+.DS_Store
